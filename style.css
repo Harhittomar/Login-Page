@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Mullish';
+    src: url(fonts/Mulish-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mullish",Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #71797E;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/background.webp);
+}
+
+.container{
+height: 80vh;
+width: 70vw;
+background-color: rgb(247, 241, 241);
+margin-top: 5rem;
+border-radius: 30px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 0.8rem;
+}
+
+.left-side{
+    height: 100%;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+}
+
+#login-img{
+    height: 95%;
+    width: 95%;
+    border-radius: 20px; 
+    transition-duration: 200ms;
+}
+
+#login-img:hover{
+    opacity: 90%;
+    cursor:default;
+}
+
+.right-side{
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 40%;
+}
+
+.intro{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+#intro-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+   
+}
+
+#intro-img:hover{
+ animation: shake 200ms linear infinite alternate-reverse;
+}
+
+@keyframes shake {
+    0%{
+        rotate: 0deg;
+    }
+
+    50%{
+        rotate: 25deg;
+    }
+
+    100%{
+        rotate: -25deg;
+    }
+}
+
+.intro h2,p{
+    margin: 7px;
+}
+
+input{
+    border: none;
+    background: transparent;
+}
+
+
+.form-elements p{
+    margin: 0px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    text-align: left;
+    margin-top: 5px;
+    
+   
+
+}
+
+#form-end{
+    margin-bottom: 8px;
+}
+
+.input-checker, .input-checker a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    gap: 60px;
+    color: rgb(103, 103, 103);
+    margin-bottom: 8px;
+    padding-left: 110px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   gap: 1.2rem;
+
+    
+    
+}
+
+.button1{
+    height: 35px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition-duration: 200ms;
+}
+
+.button1:hover, .button2:hover{
+    transform: scale(105%);
+}
+
+.button2{
+    height: 35px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left:2rem;
+    padding-right: 2rem;
+    transition-duration: 200ms;
+}
+
+#google-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#input-email, #input-password{
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(images/background.webp);
+    opacity: 50%;
+    border: rgb(223, 181, 143);
+    transition-duration: 200ms;
+}
+
+
+#input-email:focus, #input-password:focus{
+    transform: scale(105%);
+}
+
+
+
+a{
+    color: black;
+}
