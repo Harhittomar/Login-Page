@@ -62,7 +62,7 @@ const validatInputs= ()=>{
 
    if(count1===1 && count2===1){
       window.location.assign(
-         "index2.html",
+         "home.html",
        );
    }
 
