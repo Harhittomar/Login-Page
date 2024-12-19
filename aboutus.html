@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="shortcut icon" href="images/login-side.jpg" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .nav{
+            height: 3.5rem;
+            width: 100%;
+            background-color: rgb(3, 3, 27);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 10rem;
+            padding-left: 15rem;
+            
+            
+        }
+
+        #list{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+          
+            text-decoration: none;
+            gap: 40px;
+            
+        }
+
+        .navheading{
+            color: rgb(177, 177, 76);
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+       a{
+        text-decoration: none;
+        color: whitesmoke;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       font-size: larger;
+       }
+
+       .Home{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(6, 6, 41);
+        display: flex;
+        padding-left: 15rem;
+        padding-right: 8rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       }
+
+       #Homeimage{
+        height: 400px;
+        width: 400px;
+        border-radius: 40px;
+        box-shadow: 5px ;
+       }
+
+       .Homeleft{
+        line-height: 80px;
+        max-width: 520px ;
+       }
+
+       #welcome{
+        color: rgb(149, 141, 55);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: x-large;
+        font-weight: 540;
+        
+       }
+
+       #intro{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+       }
+
+       #quote{
+        color: rgb(81, 80, 80);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        line-height:30px ;
+       }
+
+       .Education{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(6, 6, 41);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 9rem;
+        padding-bottom: 2rem;
+       }
+
+       #Lucknow{
+        height: 400px;
+        width: 600px;
+        border-radius: 30px;
+       }
+       #Eduheading{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        line-height: 150px;
+        color: rgb(149, 141, 55);
+       }
+       .Eduright{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 10rem;
+       }
+
+       #Eduintro{
+        color: rgb(163, 163, 163);
+       
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        line-height: 60px;
+       }
+
+       #Table{
+        color: beige;
+        
+        font-size: 25px;
+        
+       }
+
+       .Highedu{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(6, 6, 41);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 9rem;
+        padding-bottom: 2rem;
+       }
+
+       #kiet{
+        height: 450px;
+        width: 600px;
+        border-radius: 30px;
+       }
+
+       .Highright{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        color: rgb(149, 141, 55);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 27px;
+        font-weight: bolder;
+       }
+
+       .Project{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(6, 6, 41);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 9rem;
+        padding-bottom: 2rem;
+       }
+
+       .Projectheading{
+        margin-bottom: 4rem;
+        font-size: 32px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: rgb(149, 141, 55);
+       }
+
+       .Projectcontent{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 9rem;
+        gap: 10rem;
+
+       }
+
+       .Proleft{
+        height: 300px;
+        width: 220px;
+        border: 2px solid rgb(108, 108, 38);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 80px ;
+        padding: 1rem;
+       }
+
+       .Procenter{
+        height: 300px;
+        width: 220px;
+        border: 2px solid rgb(108, 108, 38);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 80px ;
+        padding: 1rem;
+       }
+
+       .Proright{
+        height: 300px;
+        width: 220px;
+        border: 2px solid rgb(108, 108, 38);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 80px ;
+        padding: 1rem;
+       }
+
+       #Proimg{
+        height: 80px;
+        width: 80px;
+        border: 2px;
+        border-radius: 200px ;
+        margin-bottom: 1rem;
+       }
+
+       #Prohead{
+        color: rgb(201, 205, 209);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+        
+       }
+
+       #Prodesc{
+        line-height: 25px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        color: azure;
+       }
+
+       .Blog{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(6, 6, 41);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 9rem;
+        padding-bottom: 2rem;
+        line-height: 40px;
+        padding-right: 5rem;
+       }
+
+       .Bloghead{
+        color: rgb(201, 205, 209);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 20px;
+       }
+
+       .Blogcontent{
+        color: rgb(108, 108, 38);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+       }
+
+
+
+
+    </style>
+</head>
+<body>
+   
+
+    <div class="Home" id="Home">
+        <div class="Homeleft">
+            <P id="welcome">Helloo Welcome!!</P>
+            <h1 id="intro">I  am  Harshit Singh Tomar</h1>
+            <p id="quote">A student as well as a aspiring engineer who is on the 
+                journey of conquerring the codes. A coder and a movie enthusiast
+
+            </p>
+        </div>
+       
+    </div>
+
+    <div class="Education" id="Education">
+        
+        <div class="Eduleft">
+            <h1 id="Eduheading">
+                Education
+            </h1>
+            <img src="images/1200px-Gwalior_Fort_front.jpg" alt="" id="Lucknow">
+        </div>
+        <div class="Eduright">
+            <h1 id="Eduintro">
+                I would like to tell you that I was born and Raised in Gwalior, The city
+                of Music, Where I have done my schooling!. 
+            </h1>
+            <table id="Table" border="2px">
+                <tr>
+                    <td>Level of Education</td>
+                    <td>Institute Name</td>
+                    <td>Marks Obtained</td>
+                    <td>Passing Year</td>
+                </tr>
+                <tr>
+                    <td>10th Standard</td>
+                    <td>Army Public School</td>
+                    <td>95 Percentage</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>12th Standard</td>
+                    <td>Army Public School</td>
+                    <td>93 Percentage</td>
+                    <td>2024</td>
+                </tr>
+            </table>
+        </div>
+       
+    </div>
+
+    <div class="Highedu">
+        <div class="Highleft">
+            <img src="images/about-location.jpg" alt="" id="kiet">
+        </div>
+        <div class="Highright">
+            <p>As in current I am Pursuing B.tech in IT department in 
+                K.I.E.T group of institution,Ghaziabad. Further imformation will 
+                be added soon. 
+            </p>
+        </div>
+    </div>
+
+    <div class="Project" id="Project">
+        <div class="Projectheading">
+            <h1>Projects!..</h1>
+        </div>
+        <div class="Projectcontent">
+
+            <div class="Proleft">
+                <p id="Prohead">
+                    Online Calculator
+                </p>
+                <img src="images/calculator-2017-10-10.avif" alt="" id="Proimg">
+                <p id="Prodesc">
+                    Online caluclator using Html,Css and Bit of Java Script 
+                </p>
+            </div>
+
+            <div class="Procenter">
+                <p id="Prohead">
+                    Resume Website
+                </p>
+                <img src="images/cv-icon-resume-illustration-sign-user-data-symbol-or-logo-vector.jpg" alt="" id="Proimg">
+                <p id="Prodesc">
+                    Online Resume Website which showcases our skills,Projects etc;
+                </p>
+            </div>
+
+            <div class="Proright">
+                <p id="Prohead">
+                    Quiz Game
+                </p>
+                <img src="images/unnamed.png" alt="" id="Proimg">
+                <p id="Prodesc">
+                    Online Quiz game which help to relieve stress using interesting questions
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="Blog" id="Blog">
+        <div class="Bloghead">
+            <H1>My Thoughts on web develoupment?</H1>
+        </div>
+        <div class="Blogcontent">
+        <P>We can say that web develoupment is a very interesting field to look into
+            but this field seems a bit saturated but one will find it's way when they
+            put efforts into this fields.What amazed me about web is that how using a 
+            single computer we can make something which is accessible to the world. Even
+            this field does not mean only to mean Just "creating" web but also to manage
+        the web servers and maintaining the webpages. The term web develoupment has three
+            fields the frontend, the backend and the databases, one can find it's interest in 
+        any of these fields.  </P>
+        </div>
+    </div>
+</body>
+</html>

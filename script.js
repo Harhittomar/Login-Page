@@ -13,6 +13,7 @@ const inputControl = element.parentElement;
 const errorDisplay= inputControl.querySelector('.error');
 
 errorDisplay.innerText = message;
+errorDisplay.style.color= "red";
 inputControl.classList.add('error');
 inputControl.classList.remove('success');
 
